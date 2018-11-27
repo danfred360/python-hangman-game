@@ -22,6 +22,8 @@ class Game:
                 self.blank += ' '
             else:
                 self.blank += '_'
+        print(self.blank)
+        print(self.word)
         while self.tries > 0:
             g = self.guess(self.word)
             if g == 'null':
@@ -86,7 +88,7 @@ class Game:
          '|     / | \         ',
          '|                   ',
          '|                   ',
-     ' ___|________________   '],
+     ' ___|________________   '],['-'],['-'],['-']]
 
 
 
@@ -113,7 +115,6 @@ class Game:
 
     def getLetter(self):
         while True:
-            print(self.word)
             x = input('Enter a letter. --> ')
             if len(x) == 1 and x.isalpha():
                 return x
@@ -160,8 +161,6 @@ class Game:
         ans = []
         for i in range(0, self.countLines(fname)):
             l = list(f.readline())
-            l.pop(len(l) - 1)
-            l.pop(len(l) - 1)
             l.pop(len(l) - 1)
             x = ''
             for i in l:
