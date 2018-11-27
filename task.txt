@@ -1,0 +1,24 @@
+You are to create a simple hangman game
+
+At the beginning of the game, the user is asked what category he wants to use for the game. The options are:
+
+Baby Animals
+
+US StatesPreview the document
+
+World CountriesPreview the document
+
+A word is randomly selected from the category selected, and the user is told how long the word is.
+
+The user then selects the difficulty level (Easy, Normal, or hard). At the hard level, the user is only allowed three mistakes, Normal: five, and Easy: seven. 
+The user can try a letter.
+
+If the letter does not exist in the word, the user loses a life and figure 1 is displayed (See example outputPreview the document). 
+
+If the letter exists, the user is shown where the letter is in the word (example: if the user picks g and the word is Georgia, the display would be g---g--. The user is then asked if they want to guess the word. They can pass, or try to guess. If they guess incorrectly, they lose a life and figure 1 is displayed. If they guess correctly, the game is over.
+
+The above process is repeated. Every time they guess wrong, they get the next figure (figure 2, then 3, and so).
+
+If they guess wrong five times (or 3 or 7 depending on the level), they lose, and the game exits and displays the word.
+
+After each game, the user is asked if he wants to play again.
